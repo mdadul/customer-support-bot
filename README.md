@@ -1,6 +1,7 @@
 # Customer Support Chatbot with a Small Model
 
 This project implements a customer support chatbot using a small language model. The chatbot can handle initial support, billing support, and technical support, and can route users to the appropriate team based on their queries.
+![image](https://github.com/user-attachments/assets/64dce739-e090-49ad-adec-cd6a01c5cb39)
 
 ## Project Structure
 
@@ -26,8 +27,8 @@ The project uses the following dependencies:
 
 1. Clone the repository:
    ```sh
-   git clone <repository-url>
-   cd <repository-directory>
+   git clone git@github.com:mdadul/customer-support-bot.git
+   cd customer-support-bot
    ```
 2. Install dependencies:
 
@@ -51,10 +52,10 @@ The chatbot will start a command-line interface (CLI) where you can interact wit
 ## Implementation Details
 The chatbot is implemented using a state graph with the following nodes:
 
-    * `initial_support`: Handles initial support queries and routes users to billing or technical support.
-    * `billing_support`: Handles billing support queries and can authorize refunds.
-    * `technical_support`: Handles technical support queries.
-    handle_refund: Processes refunds if authorized.
+* `initial_support`: Handles initial support queries and routes users to billing or technical support.
+* `billing_support`: Handles billing support queries and can authorize refunds.
+* `technical_support`: Handles technical support queries.
+* `handle_refund`: Processes refunds if authorized.
 
 The chatbot uses the `Meta-Llama-3.1-8B-Instruct-Turbo` model to generate responses. It also uses Zod schemas to validate the structure of the responses.
 
@@ -66,4 +67,4 @@ If you would like to contribute to this project, please follow these steps:
 2. Create a new branch for your feature or bugfix.
 3. Make your changes and commit them with descriptive messages.
 4. Push your changes to your fork.
-5. #Create a pull request to the main repository.
+5. Create a pull request to the main repository.
