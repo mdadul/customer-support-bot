@@ -1,0 +1,19 @@
+{
+  "name": "langgraph-agent",
+  "module": "agent.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@langchain/community": "^0.3.21",
+    "@langchain/core": "^0.3.27",
+    "@langchain/langgraph": "^0.2.38",
+    "@langchain/openai": "^0.3.16",
+    "zod": "^3.24.1",
+    "zod-to-json-schema": "^3.24.1"
+  }
+}
